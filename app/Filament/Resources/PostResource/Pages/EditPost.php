@@ -34,6 +34,7 @@ class EditPost extends EditRecord
                     Tab::make('Docs')
                         ->schema([
                             ViewField::make('documents')
+                                ->dehydrated(false)
                                 ->view('filament.posts.documents'),
                         ]),
                 ])
